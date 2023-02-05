@@ -10,5 +10,5 @@
     "declaration": true,
     "declarationMap": true
   },
-  "files": ["src/**/*.ts", "tests/*.ts"]
+  "files": ["./src/index.ts"]
 }
