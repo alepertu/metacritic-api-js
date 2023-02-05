@@ -7,6 +7,18 @@ chai.use(chaiAsPromised);
 const expect = chai.expect;
 
 describe('MetacriticAPI', function () {
+  it('1. Should be a function', function () {
+    expect(metacriticAPI).to.be.a('function');
+  });
+  it('2. Should return all the API methods', function () {
+    const api = metacriticAPI('pc');
+
+    expect(api).to.have.property('loadMetacriticPage');
+    expect(api).to.have.property('checkValidResponse');
+    expect(api).to.have.property('getMetacriticScores');
+    expect(api).to.have.property('getSystem');
+    expect(api).to.have.property('setSystem');
+  });
   describe('# loadMetacriticPage()', function () {
     it('1. Should load the page on valid input', function (done) {
       const api = metacriticAPI('pc');
