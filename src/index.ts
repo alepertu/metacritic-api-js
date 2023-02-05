@@ -4,6 +4,7 @@ import * as cheerio from 'cheerio';
 const systems = [
   'playstation-4',
   'playstation-5',
+  'switch',
   'pc',
   'xbox-one',
   'wii-u',
@@ -33,7 +34,7 @@ interface MetacriticOutput {
 /**
  * Simple MetaCritic API to get multi-platform games scores
  * @author Alejandro Pertusatti <alepertu@gmail.com>
- * @param system - One of the supported systems
+ * @param system - One of the supported systems. Currently playstation-4, playstation-5, switch, pc, xbox-one, wii-u, 3ds, playstation-vita, ios and xbox-series-x.
  * @returns The API methods
  */
 function metacriticAPI(system: MetacriticSystem) {
@@ -47,6 +48,11 @@ function metacriticAPI(system: MetacriticSystem) {
    * @returns A promise that resolves to the Metacritic page content for the game
    */
   async function loadMetacriticPage(game_name: string) {
+    if (!systems.includes(system)) {
+      throw new Error(
+        'System invalid. Use setSystem to change to a valid one.'
+      );
+    }
     const sanitizedGameName = game_name
       .trim()
       .toLowerCase()
@@ -63,8 +69,8 @@ function metacriticAPI(system: MetacriticSystem) {
    * @returns A JSON Object containing the game's information
    */
   function getMetacriticScores() {
-    if (!response) {
-      return;
+    if (!checkValidResponse()) {
+      throw new Error('There is no page loaded. Use loadMetacriticPage first.');
     }
 
     const $ = cheerio.load(response);
@@ -114,6 +120,14 @@ function metacriticAPI(system: MetacriticSystem) {
   }
 
   /**
+   * Checks for the validity of loadMetacriticPage response
+   * @returns a boolean
+   */
+  function checkValidResponse() {
+    return !!response;
+  }
+
+  /**
    * Switches the API destination system
    * @param new_system - One of the supported systems
    */
@@ -125,9 +139,19 @@ function metacriticAPI(system: MetacriticSystem) {
     }
   }
 
+  /**
+   * Shows the current destination system
+   * @returns A valid system
+   */
+  function getSystem() {
+    return system;
+  }
+
   return {
     loadMetacriticPage,
+    checkValidResponse,
     getMetacriticScores,
+    getSystem,
     setSystem,
   };
 }
