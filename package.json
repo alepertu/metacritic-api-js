@@ -1,6 +1,6 @@
 {
   "name": "@alepertu/metacritic-api",
-  "version": "0.0.0-development",
+  "version": "1.1.0",
   "description": "Simple API to get multi-platform Metacritic Scores",
   "scripts": {
     "clean": "rm -rf ./lib",
