@@ -16,16 +16,27 @@ const systems = [
 
 type MetacriticSystem = typeof systems[number];
 
+type searchResult = {
+  url: string;
+  name: string;
+  itemDate: string | null;
+  imagePath: string | null;
+  metaScore: string | null;
+  scoreWord: string;
+  refType: string;
+  refTypeId: number;
+};
+
 interface MetacriticOutput {
   name: string;
   metascritic_score: number | 'TBD';
   user_score: number | 'TBD';
   rating: string;
-  genres: Array<string>;
-  developers: Array<string>;
-  publisher: Array<string>;
+  genres: string[];
+  developers: string[];
+  publisher: string[];
   release_date: string;
-  also_on: Array<string>;
+  also_on: string[];
   also_on_url: Array<string | undefined>;
   image_url: string | undefined;
   cheat_url: string | undefined;
@@ -147,10 +158,34 @@ function metacriticAPI(system: MetacriticSystem) {
     return system;
   }
 
+  /**
+   * Uses Metacritic search function to search for a game
+   * @async
+   * @param query - The search query
+   * @returns an array of game names and platforms
+   */
+  async function searchMetacritic(query: string): Promise<searchResult[]> {
+    const searchUrl = 'https://www.metacritic.com/autosearch';
+    const response = await axios.post(
+      searchUrl,
+      `search_term=${query}&image_size=98&search_each=true`,
+      {
+        headers: {
+          'x-requested-with': 'XMLHttpRequest',
+        },
+      }
+    );
+    const games = response.data.autoComplete.results.filter(
+      (result: searchResult) => result.refType.includes('Game')
+    );
+    return games;
+  }
+
   return {
     loadMetacriticPage,
     checkValidResponse,
     getMetacriticScores,
+    searchMetacritic,
     getSystem,
     setSystem,
   };
