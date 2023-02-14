@@ -34,7 +34,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.13.0"],\
             ["axios", "npm:1.3.2"],\
             ["chai", "npm:4.3.7"],\
-            ["chai-as-promised", "virtual:2a9f8880cb303ead7f688720a8038f27bdf9d29f9631fd20bc369bdfa1c4fc75f909910c9ec61986090652899fd183415a452a342590e876fb229dfb019c22bc#npm:7.1.1"],\
             ["cheerio", "npm:1.0.0-rc.12"],\
             ["mocha", "npm:10.2.0"],\
             ["semantic-release", "npm:20.1.0"],\
@@ -55,7 +54,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.13.0"],\
             ["axios", "npm:1.3.2"],\
             ["chai", "npm:4.3.7"],\
-            ["chai-as-promised", "virtual:2a9f8880cb303ead7f688720a8038f27bdf9d29f9631fd20bc369bdfa1c4fc75f909910c9ec61986090652899fd183415a452a342590e876fb229dfb019c22bc#npm:7.1.1"],\
             ["cheerio", "npm:1.0.0-rc.12"],\
             ["mocha", "npm:10.2.0"],\
             ["semantic-release", "npm:20.1.0"],\
@@ -1330,29 +1328,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["loupe", "npm:2.3.6"],\
             ["pathval", "npm:1.1.1"],\
             ["type-detect", "npm:4.0.8"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["chai-as-promised", [\
-        ["npm:7.1.1", {\
-          "packageLocation": "./.yarn/cache/chai-as-promised-npm-7.1.1-cdc17e4612-7262868a5b.zip/node_modules/chai-as-promised/",\
-          "packageDependencies": [\
-            ["chai-as-promised", "npm:7.1.1"]\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["virtual:2a9f8880cb303ead7f688720a8038f27bdf9d29f9631fd20bc369bdfa1c4fc75f909910c9ec61986090652899fd183415a452a342590e876fb229dfb019c22bc#npm:7.1.1", {\
-          "packageLocation": "./.yarn/__virtual__/chai-as-promised-virtual-0d035c1e03/0/cache/chai-as-promised-npm-7.1.1-cdc17e4612-7262868a5b.zip/node_modules/chai-as-promised/",\
-          "packageDependencies": [\
-            ["chai-as-promised", "virtual:2a9f8880cb303ead7f688720a8038f27bdf9d29f9631fd20bc369bdfa1c4fc75f909910c9ec61986090652899fd183415a452a342590e876fb229dfb019c22bc#npm:7.1.1"],\
-            ["@types/chai", "npm:4.3.4"],\
-            ["chai", "npm:4.3.7"],\
-            ["check-error", "npm:1.0.2"]\
-          ],\
-          "packagePeers": [\
-            "@types/chai",\
-            "chai"\
           ],\
           "linkType": "HARD"\
         }]\

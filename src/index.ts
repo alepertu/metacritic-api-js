@@ -29,7 +29,7 @@ type searchResult = {
 
 interface MetacriticOutput {
   name: string;
-  metascritic_score: number | 'TBD';
+  metacritic_score: number | 'TBD';
   user_score: number | 'TBD';
   rating: string;
   genres: string[];
@@ -49,6 +49,10 @@ interface MetacriticOutput {
  * @returns The API methods
  */
 function metacriticAPI(system: MetacriticSystem) {
+  if (!systems.includes(system)) {
+    throw new Error('System invalid');
+  }
+
   let response = '';
   let baseUrl = 'http://www.metacritic.com/game/';
 
@@ -59,11 +63,6 @@ function metacriticAPI(system: MetacriticSystem) {
    * @returns A promise that resolves to the Metacritic page content for the game
    */
   async function loadMetacriticPage(game_name: string) {
-    if (!systems.includes(system)) {
-      throw new Error(
-        'System invalid. Use setSystem to change to a valid one.'
-      );
-    }
     const sanitizedGameName = game_name
       .trim()
       .toLowerCase()
@@ -80,14 +79,14 @@ function metacriticAPI(system: MetacriticSystem) {
    * @returns A JSON Object containing the game's information
    */
   function getMetacriticScores() {
-    if (!checkValidResponse()) {
+    if (!response) {
       throw new Error('There is no page loaded. Use loadMetacriticPage first.');
     }
 
     const $ = cheerio.load(response);
     const jsonOutput: MetacriticOutput = {
       name: $('div.product_title h1').text().trim(),
-      metascritic_score: 'TBD',
+      metacritic_score: 'TBD',
       user_score: 'TBD',
       rating: $('li.summary_detail.product_rating span.data').text().trim(),
       genres: [],
@@ -119,7 +118,7 @@ function metacriticAPI(system: MetacriticSystem) {
 
     const releaseDate = Date.parse(jsonOutput.release_date);
     if (!(releaseDate > Date.now())) {
-      jsonOutput.metascritic_score = parseInt(
+      jsonOutput.metacritic_score = parseInt(
         $('div.metascore_w.game span').text()
       );
       jsonOutput.user_score = parseFloat(
@@ -131,20 +130,14 @@ function metacriticAPI(system: MetacriticSystem) {
   }
 
   /**
-   * Checks for the validity of loadMetacriticPage response
-   * @returns a boolean
-   */
-  function checkValidResponse() {
-    return !!response;
-  }
-
-  /**
    * Switches the API destination system
    * @param new_system - One of the supported systems
+   * @returns the new system
    */
   function setSystem(new_system: MetacriticSystem) {
     if (systems.includes(new_system)) {
       system = new_system;
+      return system;
     } else {
       throw new Error('System invalid');
     }
@@ -183,7 +176,6 @@ function metacriticAPI(system: MetacriticSystem) {
 
   return {
     loadMetacriticPage,
-    checkValidResponse,
     getMetacriticScores,
     searchMetacritic,
     getSystem,

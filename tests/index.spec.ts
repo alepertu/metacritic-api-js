@@ -1,10 +1,7 @@
 import 'mocha';
 import chai from 'chai';
-import chaiAsPromised from 'chai-as-promised';
 import metacriticAPI from '../src';
-import { AxiosError } from 'axios';
 
-chai.use(chaiAsPromised);
 const expect = chai.expect;
 
 describe('MetacriticAPI', function () {
@@ -15,33 +12,30 @@ describe('MetacriticAPI', function () {
     const api = metacriticAPI('pc');
 
     expect(api).to.have.property('loadMetacriticPage');
-    expect(api).to.have.property('checkValidResponse');
     expect(api).to.have.property('getMetacriticScores');
     expect(api).to.have.property('searchMetacritic');
     expect(api).to.have.property('getSystem');
     expect(api).to.have.property('setSystem');
   });
+  it('3. Should throw an error on invalid system', function () {
+    expect(metacriticAPI.bind(null, 'invalid')).to.throw('System invalid');
+  });
   describe('# loadMetacriticPage()', function () {
     it('1. Should load the page on valid input', async function () {
       const api = metacriticAPI('pc');
-      const page = api.loadMetacriticPage('The Witcher 3: Wild Hunt');
-      expect(page).to.eventually.be.a('string');
-    });
-    it('2. Should throw an error on invalid system', async function () {
-      const api = metacriticAPI('invalid');
-      expect(api.loadMetacriticPage('The Witcher 3: Wild Hunt')).to.eventually
-        .be.rejected;
+      const page = await api.loadMetacriticPage('The Witcher 3: Wild Hunt');
+      expect(page).to.be.a('string');
     });
   });
   describe('# getMetacriticScores()', function () {
     it('1. Should return an object with the game information', async function () {
-      const api = metacriticAPI('pc');
-      await api.loadMetacriticPage('The Witcher 3: Wild Hunt');
+      const api = metacriticAPI('playstation-5');
+      await api.loadMetacriticPage('The Last of Us Part I');
       const scores = api.getMetacriticScores();
 
       expect(scores).to.be.an('object');
       expect(scores).to.have.property('name');
-      expect(scores).to.have.property('metascritic_score');
+      expect(scores).to.have.property('metacritic_score');
       expect(scores).to.have.property('user_score');
       expect(scores).to.have.property('rating');
       expect(scores).to.have.property('genres');
@@ -63,8 +57,8 @@ describe('MetacriticAPI', function () {
   describe('# searchMetacritic()', function () {
     it('1. Should return an array with the search results', async function () {
       const api = metacriticAPI('pc');
-      const searchResult = api.searchMetacritic('dishon');
-      expect(searchResult).to.eventually.be.an('array');
+      const searchResult = await api.searchMetacritic('dishon');
+      expect(searchResult).to.be.an('array');
     });
   });
   describe('# getSystem()', function () {
