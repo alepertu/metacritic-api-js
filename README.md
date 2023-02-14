@@ -20,7 +20,7 @@ yarn add @alepertu/metacritic-api
 import metacriticAPI from 'metacritic-api';
 
 // initalizes the API for the specified platform
-const api = metacriticAPI('ps5');
+const api = metacriticAPI('playstation-5');
 
 // loads the page for the game
 await api.loadMetacriticPage('The Last Of Us Part I');
