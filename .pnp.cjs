@@ -28,8 +28,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@dmeents/semantic-release-yarn", "npm:1.1.2"],\
             ["@types/chai", "npm:4.3.4"],\
-            ["@types/chai-as-promised", "npm:7.1.5"],\
             ["@types/mocha", "npm:10.0.1"],\
             ["@types/node", "npm:18.13.0"],\
             ["axios", "npm:1.3.2"],\
@@ -48,8 +48,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@alepertu/metacritic-api", "workspace:."],\
+            ["@dmeents/semantic-release-yarn", "npm:1.1.2"],\
             ["@types/chai", "npm:4.3.4"],\
-            ["@types/chai-as-promised", "npm:7.1.5"],\
             ["@types/mocha", "npm:10.0.1"],\
             ["@types/node", "npm:18.13.0"],\
             ["axios", "npm:1.3.2"],\
@@ -109,6 +109,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@cspotcode/source-map-support", "npm:0.8.1"],\
             ["@jridgewell/trace-mapping", "npm:0.3.9"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@dmeents/semantic-release-yarn", [\
+        ["npm:1.1.2", {\
+          "packageLocation": "./.yarn/cache/@dmeents-semantic-release-yarn-npm-1.1.2-30c7bae94b-91ffa3f7a2.zip/node_modules/@dmeents/semantic-release-yarn/",\
+          "packageDependencies": [\
+            ["@dmeents/semantic-release-yarn", "npm:1.1.2"],\
+            ["@semantic-release/error", "npm:3.0.0"],\
+            ["execa", "npm:5.1.1"],\
+            ["read-pkg", "npm:5.2.0"],\
+            ["semver", "npm:7.3.8"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -805,16 +818,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["npm:4.3.4", {\
           "packageLocation": "./.yarn/cache/@types-chai-npm-4.3.4-fc230290e8-571184967b.zip/node_modules/@types/chai/",\
           "packageDependencies": [\
-            ["@types/chai", "npm:4.3.4"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["@types/chai-as-promised", [\
-        ["npm:7.1.5", {\
-          "packageLocation": "./.yarn/cache/@types-chai-as-promised-npm-7.1.5-c83fbd2182-7c1345c6e3.zip/node_modules/@types/chai-as-promised/",\
-          "packageDependencies": [\
-            ["@types/chai-as-promised", "npm:7.1.5"],\
             ["@types/chai", "npm:4.3.4"]\
           ],\
           "linkType": "HARD"\
