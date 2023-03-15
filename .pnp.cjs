@@ -28,7 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@dmeents/semantic-release-yarn", "npm:1.1.2"],\
+            ["@dmeents/semantic-release-yarn", "npm:1.1.3"],\
             ["@types/chai", "npm:4.3.4"],\
             ["@types/mocha", "npm:10.0.1"],\
             ["@types/node", "npm:18.13.0"],\
@@ -48,7 +48,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@alepertu/metacritic-api", "workspace:."],\
-            ["@dmeents/semantic-release-yarn", "npm:1.1.2"],\
+            ["@dmeents/semantic-release-yarn", "npm:1.1.3"],\
             ["@types/chai", "npm:4.3.4"],\
             ["@types/mocha", "npm:10.0.1"],\
             ["@types/node", "npm:18.13.0"],\
@@ -114,12 +114,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@dmeents/semantic-release-yarn", [\
-        ["npm:1.1.2", {\
-          "packageLocation": "./.yarn/cache/@dmeents-semantic-release-yarn-npm-1.1.2-30c7bae94b-91ffa3f7a2.zip/node_modules/@dmeents/semantic-release-yarn/",\
+        ["npm:1.1.3", {\
+          "packageLocation": "./.yarn/cache/@dmeents-semantic-release-yarn-npm-1.1.3-f0364b7a59-2978058e6b.zip/node_modules/@dmeents/semantic-release-yarn/",\
           "packageDependencies": [\
-            ["@dmeents/semantic-release-yarn", "npm:1.1.2"],\
+            ["@dmeents/semantic-release-yarn", "npm:1.1.3"],\
             ["@semantic-release/error", "npm:3.0.0"],\
             ["execa", "npm:5.1.1"],\
+            ["js-yaml", "npm:4.1.0"],\
             ["read-pkg", "npm:5.2.0"],\
             ["semver", "npm:7.3.8"]\
           ],\
