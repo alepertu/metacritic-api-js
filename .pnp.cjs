@@ -31,7 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@dmeents/semantic-release-yarn", "npm:1.1.7"],\
             ["@types/chai", "npm:4.3.4"],\
             ["@types/mocha", "npm:10.0.1"],\
-            ["@types/node", "npm:18.15.11"],\
+            ["@types/node", "npm:18.16.0"],\
             ["axios", "npm:1.3.5"],\
             ["chai", "npm:4.3.7"],\
             ["cheerio", "npm:1.0.0-rc.12"],\
@@ -51,7 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@dmeents/semantic-release-yarn", "npm:1.1.7"],\
             ["@types/chai", "npm:4.3.4"],\
             ["@types/mocha", "npm:10.0.1"],\
-            ["@types/node", "npm:18.15.11"],\
+            ["@types/node", "npm:18.16.0"],\
             ["axios", "npm:1.3.5"],\
             ["chai", "npm:4.3.7"],\
             ["cheerio", "npm:1.0.0-rc.12"],\
@@ -853,10 +853,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/node", [\
-        ["npm:18.15.11", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-18.15.11-fd8ceaaffd-977b4ad047.zip/node_modules/@types/node/",\
+        ["npm:18.16.0", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-18.16.0-ba113a4325-63e0042136.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:18.15.11"]\
+            ["@types/node", "npm:18.16.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5886,7 +5886,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.11"],\
             ["@tsconfig/node14", "npm:1.0.3"],\
             ["@tsconfig/node16", "npm:1.0.3"],\
-            ["@types/node", "npm:18.15.11"],\
+            ["@types/node", "npm:18.16.0"],\
             ["@types/swc__core", null],\
             ["@types/swc__wasm", null],\
             ["@types/typescript", null],\
