@@ -30,7 +30,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@dmeents/semantic-release-yarn", "npm:1.1.11"],\
             ["@types/chai", "npm:4.3.4"],\
-            ["@types/mocha", "npm:10.0.1"],\
+            ["@types/mocha", "npm:10.0.6"],\
             ["@types/node", "npm:18.16.0"],\
             ["axios", "npm:1.3.6"],\
             ["chai", "npm:4.3.7"],\
@@ -50,7 +50,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@alepertu/metacritic-api", "workspace:."],\
             ["@dmeents/semantic-release-yarn", "npm:1.1.11"],\
             ["@types/chai", "npm:4.3.4"],\
-            ["@types/mocha", "npm:10.0.1"],\
+            ["@types/mocha", "npm:10.0.6"],\
             ["@types/node", "npm:18.16.0"],\
             ["axios", "npm:1.3.6"],\
             ["chai", "npm:4.3.7"],\
@@ -844,10 +844,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/mocha", [\
-        ["npm:10.0.1", {\
-          "packageLocation": "./.yarn/cache/@types-mocha-npm-10.0.1-7c94e9e170-224ea9fce7.zip/node_modules/@types/mocha/",\
+        ["npm:10.0.6", {\
+          "packageLocation": "./.yarn/cache/@types-mocha-npm-10.0.6-a687c1962c-f7c836cf6c.zip/node_modules/@types/mocha/",\
           "packageDependencies": [\
-            ["@types/mocha", "npm:10.0.1"]\
+            ["@types/mocha", "npm:10.0.6"]\
           ],\
           "linkType": "HARD"\
         }]\
