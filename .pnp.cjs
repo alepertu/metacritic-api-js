@@ -31,7 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@dmeents/semantic-release-yarn", "npm:1.1.11"],\
             ["@types/chai", "npm:4.3.4"],\
             ["@types/mocha", "npm:10.0.1"],\
-            ["@types/node", "npm:18.16.0"],\
+            ["@types/node", "npm:18.19.59"],\
             ["axios", "npm:1.3.6"],\
             ["chai", "npm:4.3.7"],\
             ["cheerio", "npm:1.0.0-rc.12"],\
@@ -51,7 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@dmeents/semantic-release-yarn", "npm:1.1.11"],\
             ["@types/chai", "npm:4.3.4"],\
             ["@types/mocha", "npm:10.0.1"],\
-            ["@types/node", "npm:18.16.0"],\
+            ["@types/node", "npm:18.19.59"],\
             ["axios", "npm:1.3.6"],\
             ["chai", "npm:4.3.7"],\
             ["cheerio", "npm:1.0.0-rc.12"],\
@@ -853,10 +853,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/node", [\
-        ["npm:18.16.0", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-18.16.0-ba113a4325-63e0042136.zip/node_modules/@types/node/",\
+        ["npm:18.19.59", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-18.19.59-1f544e2666-8e45a05aa9.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:18.16.0"]\
+            ["@types/node", "npm:18.19.59"],\
+            ["undici-types", "npm:5.26.5"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5886,7 +5887,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.11"],\
             ["@tsconfig/node14", "npm:1.0.3"],\
             ["@tsconfig/node16", "npm:1.0.3"],\
-            ["@types/node", "npm:18.16.0"],\
+            ["@types/node", "npm:18.19.59"],\
             ["@types/swc__core", null],\
             ["@types/swc__wasm", null],\
             ["@types/typescript", null],\
@@ -5983,6 +5984,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/uglify-js-npm-3.17.4-58d4ab56aa-7b3897df38.zip/node_modules/uglify-js/",\
           "packageDependencies": [\
             ["uglify-js", "npm:3.17.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["undici-types", [\
+        ["npm:5.26.5", {\
+          "packageLocation": "./.yarn/cache/undici-types-npm-5.26.5-de4f7c7bb9-3192ef6f3f.zip/node_modules/undici-types/",\
+          "packageDependencies": [\
+            ["undici-types", "npm:5.26.5"]\
           ],\
           "linkType": "HARD"\
         }]\
