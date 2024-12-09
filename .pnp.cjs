@@ -29,11 +29,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@dmeents/semantic-release-yarn", "npm:1.1.11"],\
-            ["@types/chai", "npm:4.3.4"],\
+            ["@types/chai", "npm:4.3.20"],\
             ["@types/mocha", "npm:10.0.1"],\
             ["@types/node", "npm:18.16.0"],\
             ["axios", "npm:1.3.6"],\
-            ["chai", "npm:4.3.7"],\
+            ["chai", "npm:4.5.0"],\
             ["cheerio", "npm:1.0.0-rc.12"],\
             ["mocha", "npm:10.2.0"],\
             ["semantic-release", "npm:21.0.1"],\
@@ -49,11 +49,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@alepertu/metacritic-api", "workspace:."],\
             ["@dmeents/semantic-release-yarn", "npm:1.1.11"],\
-            ["@types/chai", "npm:4.3.4"],\
+            ["@types/chai", "npm:4.3.20"],\
             ["@types/mocha", "npm:10.0.1"],\
             ["@types/node", "npm:18.16.0"],\
             ["axios", "npm:1.3.6"],\
-            ["chai", "npm:4.3.7"],\
+            ["chai", "npm:4.5.0"],\
             ["cheerio", "npm:1.0.0-rc.12"],\
             ["mocha", "npm:10.2.0"],\
             ["semantic-release", "npm:21.0.1"],\
@@ -826,10 +826,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/chai", [\
-        ["npm:4.3.4", {\
-          "packageLocation": "./.yarn/cache/@types-chai-npm-4.3.4-fc230290e8-571184967b.zip/node_modules/@types/chai/",\
+        ["npm:4.3.20", {\
+          "packageLocation": "./.yarn/cache/@types-chai-npm-4.3.20-468371f41f-7c5b0c9148.zip/node_modules/@types/chai/",\
           "packageDependencies": [\
-            ["@types/chai", "npm:4.3.4"]\
+            ["@types/chai", "npm:4.3.20"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1386,17 +1386,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["chai", [\
-        ["npm:4.3.7", {\
-          "packageLocation": "./.yarn/cache/chai-npm-4.3.7-48fdcf2584-0bba7d2678.zip/node_modules/chai/",\
+        ["npm:4.5.0", {\
+          "packageLocation": "./.yarn/cache/chai-npm-4.5.0-428447e206-70e5a8418a.zip/node_modules/chai/",\
           "packageDependencies": [\
-            ["chai", "npm:4.3.7"],\
+            ["chai", "npm:4.5.0"],\
             ["assertion-error", "npm:1.1.0"],\
-            ["check-error", "npm:1.0.2"],\
-            ["deep-eql", "npm:4.1.3"],\
-            ["get-func-name", "npm:2.0.0"],\
-            ["loupe", "npm:2.3.6"],\
+            ["check-error", "npm:1.0.3"],\
+            ["deep-eql", "npm:4.1.4"],\
+            ["get-func-name", "npm:2.0.2"],\
+            ["loupe", "npm:2.3.7"],\
             ["pathval", "npm:1.1.1"],\
-            ["type-detect", "npm:4.0.8"]\
+            ["type-detect", "npm:4.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1430,10 +1430,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["check-error", [\
-        ["npm:1.0.2", {\
-          "packageLocation": "./.yarn/cache/check-error-npm-1.0.2-00c540c6e9-d9d1065044.zip/node_modules/check-error/",\
+        ["npm:1.0.3", {\
+          "packageLocation": "./.yarn/cache/check-error-npm-1.0.3-137994eabc-e2131025cf.zip/node_modules/check-error/",\
           "packageDependencies": [\
-            ["check-error", "npm:1.0.2"]\
+            ["check-error", "npm:1.0.3"],\
+            ["get-func-name", "npm:2.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1920,10 +1921,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["deep-eql", [\
-        ["npm:4.1.3", {\
-          "packageLocation": "./.yarn/cache/deep-eql-npm-4.1.3-020a64f862-7f6d30cb41.zip/node_modules/deep-eql/",\
+        ["npm:4.1.4", {\
+          "packageLocation": "./.yarn/cache/deep-eql-npm-4.1.4-bc4d39c2ca-01c3ca78ff.zip/node_modules/deep-eql/",\
           "packageDependencies": [\
-            ["deep-eql", "npm:4.1.3"],\
+            ["deep-eql", "npm:4.1.4"],\
             ["type-detect", "npm:4.0.8"]\
           ],\
           "linkType": "HARD"\
@@ -2503,10 +2504,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["get-func-name", [\
-        ["npm:2.0.0", {\
-          "packageLocation": "./.yarn/cache/get-func-name-npm-2.0.0-afbf363765-8d82e69f3e.zip/node_modules/get-func-name/",\
+        ["npm:2.0.2", {\
+          "packageLocation": "./.yarn/cache/get-func-name-npm-2.0.2-409dbe3703-3f62f4c236.zip/node_modules/get-func-name/",\
           "packageDependencies": [\
-            ["get-func-name", "npm:2.0.0"]\
+            ["get-func-name", "npm:2.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3564,11 +3565,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["loupe", [\
-        ["npm:2.3.6", {\
-          "packageLocation": "./.yarn/cache/loupe-npm-2.3.6-b8b37d55e7-cc83f1b124.zip/node_modules/loupe/",\
+        ["npm:2.3.7", {\
+          "packageLocation": "./.yarn/cache/loupe-npm-2.3.7-f294c2ef33-96c058ec71.zip/node_modules/loupe/",\
           "packageDependencies": [\
-            ["loupe", "npm:2.3.6"],\
-            ["get-func-name", "npm:2.0.0"]\
+            ["loupe", "npm:2.3.7"],\
+            ["get-func-name", "npm:2.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5928,6 +5929,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/type-detect-npm-4.0.8-8d8127b901-62b5628bff.zip/node_modules/type-detect/",\
           "packageDependencies": [\
             ["type-detect", "npm:4.0.8"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:4.1.0", {\
+          "packageLocation": "./.yarn/cache/type-detect-npm-4.1.0-171d011a73-3b32f873cd.zip/node_modules/type-detect/",\
+          "packageDependencies": [\
+            ["type-detect", "npm:4.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
