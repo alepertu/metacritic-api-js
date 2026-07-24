@@ -34,7 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.16.0"],\
             ["axios", "npm:1.3.6"],\
             ["chai", "npm:4.3.7"],\
-            ["cheerio", "npm:1.0.0-rc.12"],\
+            ["cheerio", "npm:1.2.0"],\
             ["mocha", "npm:10.2.0"],\
             ["semantic-release", "npm:21.0.1"],\
             ["ts-node", "virtual:2a9f8880cb303ead7f688720a8038f27bdf9d29f9631fd20bc369bdfa1c4fc75f909910c9ec61986090652899fd183415a452a342590e876fb229dfb019c22bc#npm:10.9.1"],\
@@ -54,7 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.16.0"],\
             ["axios", "npm:1.3.6"],\
             ["chai", "npm:4.3.7"],\
-            ["cheerio", "npm:1.0.0-rc.12"],\
+            ["cheerio", "npm:1.2.0"],\
             ["mocha", "npm:10.2.0"],\
             ["semantic-release", "npm:21.0.1"],\
             ["ts-node", "virtual:2a9f8880cb303ead7f688720a8038f27bdf9d29f9631fd20bc369bdfa1c4fc75f909910c9ec61986090652899fd183415a452a342590e876fb229dfb019c22bc#npm:10.9.1"],\
@@ -1439,17 +1439,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["cheerio", [\
-        ["npm:1.0.0-rc.12", {\
-          "packageLocation": "./.yarn/cache/cheerio-npm-1.0.0-rc.12-6785a97c2a-5d4c1b7a53.zip/node_modules/cheerio/",\
+        ["npm:1.2.0", {\
+          "packageLocation": "./.yarn/cache/cheerio-npm-1.2.0-05e4b8af21-d0e83ebd6c.zip/node_modules/cheerio/",\
           "packageDependencies": [\
-            ["cheerio", "npm:1.0.0-rc.12"],\
+            ["cheerio", "npm:1.2.0"],\
             ["cheerio-select", "npm:2.1.0"],\
             ["dom-serializer", "npm:2.0.0"],\
             ["domhandler", "npm:5.0.3"],\
-            ["domutils", "npm:3.0.1"],\
-            ["htmlparser2", "npm:8.0.1"],\
-            ["parse5", "npm:7.1.2"],\
-            ["parse5-htmlparser2-tree-adapter", "npm:7.0.0"]\
+            ["domutils", "npm:3.2.2"],\
+            ["encoding-sniffer", "npm:0.2.1"],\
+            ["htmlparser2", "npm:10.1.0"],\
+            ["parse5", "npm:7.3.0"],\
+            ["parse5-htmlparser2-tree-adapter", "npm:7.1.0"],\
+            ["parse5-parser-stream", "npm:7.1.2"],\
+            ["undici", "npm:7.29.0"],\
+            ["whatwg-mimetype", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2058,6 +2062,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["domhandler", "npm:5.0.3"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:3.2.2", {\
+          "packageLocation": "./.yarn/cache/domutils-npm-3.2.2-290180a284-ae941d56f0.zip/node_modules/domutils/",\
+          "packageDependencies": [\
+            ["domutils", "npm:3.2.2"],\
+            ["dom-serializer", "npm:2.0.0"],\
+            ["domelementtype", "npm:2.3.0"],\
+            ["domhandler", "npm:5.0.3"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["dot-prop", [\
@@ -2099,11 +2113,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["encoding-sniffer", [\
+        ["npm:0.2.1", {\
+          "packageLocation": "./.yarn/cache/encoding-sniffer-npm-0.2.1-55db9e1e21-d96cc88bba.zip/node_modules/encoding-sniffer/",\
+          "packageDependencies": [\
+            ["encoding-sniffer", "npm:0.2.1"],\
+            ["iconv-lite", "npm:0.6.3"],\
+            ["whatwg-encoding", "npm:3.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["entities", [\
         ["npm:4.4.0", {\
           "packageLocation": "./.yarn/cache/entities-npm-4.4.0-97635dc5cc-84d250329f.zip/node_modules/entities/",\
           "packageDependencies": [\
             ["entities", "npm:4.4.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:6.0.1", {\
+          "packageLocation": "./.yarn/cache/entities-npm-6.0.1-84692dab43-937b952e81.zip/node_modules/entities/",\
+          "packageDependencies": [\
+            ["entities", "npm:6.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:7.0.1", {\
+          "packageLocation": "./.yarn/cache/entities-npm-7.0.1-61f8ba3430-5ee49e52e6.zip/node_modules/entities/",\
+          "packageDependencies": [\
+            ["entities", "npm:7.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2722,14 +2761,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["htmlparser2", [\
-        ["npm:8.0.1", {\
-          "packageLocation": "./.yarn/cache/htmlparser2-npm-8.0.1-b432299617-06d5c71e83.zip/node_modules/htmlparser2/",\
+        ["npm:10.1.0", {\
+          "packageLocation": "./.yarn/cache/htmlparser2-npm-10.1.0-3c9ddb01b4-49b8fa62dc.zip/node_modules/htmlparser2/",\
           "packageDependencies": [\
-            ["htmlparser2", "npm:8.0.1"],\
+            ["htmlparser2", "npm:10.1.0"],\
             ["domelementtype", "npm:2.3.0"],\
             ["domhandler", "npm:5.0.3"],\
-            ["domutils", "npm:3.0.1"],\
-            ["entities", "npm:4.4.0"]\
+            ["domutils", "npm:3.2.2"],\
+            ["entities", "npm:7.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4707,14 +4746,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["entities", "npm:4.4.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:7.3.0", {\
+          "packageLocation": "./.yarn/cache/parse5-npm-7.3.0-b0410074a3-ffd040c469.zip/node_modules/parse5/",\
+          "packageDependencies": [\
+            ["parse5", "npm:7.3.0"],\
+            ["entities", "npm:6.0.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["parse5-htmlparser2-tree-adapter", [\
-        ["npm:7.0.0", {\
-          "packageLocation": "./.yarn/cache/parse5-htmlparser2-tree-adapter-npm-7.0.0-38e1b3a974-fc5d01e077.zip/node_modules/parse5-htmlparser2-tree-adapter/",\
+        ["npm:7.1.0", {\
+          "packageLocation": "./.yarn/cache/parse5-htmlparser2-tree-adapter-npm-7.1.0-02959cc692-98326fc544.zip/node_modules/parse5-htmlparser2-tree-adapter/",\
           "packageDependencies": [\
-            ["parse5-htmlparser2-tree-adapter", "npm:7.0.0"],\
+            ["parse5-htmlparser2-tree-adapter", "npm:7.1.0"],\
             ["domhandler", "npm:5.0.3"],\
+            ["parse5", "npm:7.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["parse5-parser-stream", [\
+        ["npm:7.1.2", {\
+          "packageLocation": "./.yarn/cache/parse5-parser-stream-npm-7.1.2-94131559b2-75b232d460.zip/node_modules/parse5-parser-stream/",\
+          "packageDependencies": [\
+            ["parse5-parser-stream", "npm:7.1.2"],\
             ["parse5", "npm:7.1.2"]\
           ],\
           "linkType": "HARD"\
@@ -5987,6 +6044,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["undici", [\
+        ["npm:7.29.0", {\
+          "packageLocation": "./.yarn/cache/undici-npm-7.29.0-561de03d83-b3327e0525.zip/node_modules/undici/",\
+          "packageDependencies": [\
+            ["undici", "npm:7.29.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["unique-filename", [\
         ["npm:2.0.1", {\
           "packageLocation": "./.yarn/cache/unique-filename-npm-2.0.1-183c6c7c2b-807acf3381.zip/node_modules/unique-filename/",\
@@ -6123,6 +6189,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/webidl-conversions-npm-3.0.1-60310f6a2b-c92a0a6ab9.zip/node_modules/webidl-conversions/",\
           "packageDependencies": [\
             ["webidl-conversions", "npm:3.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["whatwg-encoding", [\
+        ["npm:3.1.1", {\
+          "packageLocation": "./.yarn/cache/whatwg-encoding-npm-3.1.1-7dfe21cf7d-f75a614224.zip/node_modules/whatwg-encoding/",\
+          "packageDependencies": [\
+            ["whatwg-encoding", "npm:3.1.1"],\
+            ["iconv-lite", "npm:0.6.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["whatwg-mimetype", [\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/whatwg-mimetype-npm-4.0.0-ebb293a688-f97edd4b4e.zip/node_modules/whatwg-mimetype/",\
+          "packageDependencies": [\
+            ["whatwg-mimetype", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
